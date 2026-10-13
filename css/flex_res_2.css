@@ -1,0 +1,46 @@
+@import url(reset.css);
+.container{
+    width: 90%;
+    max-width: 1200px;
+    min-width: 290px;
+    margin: 50px auto;
+    padding: 3%;
+    background-color: antiquewhite;
+}
+.card_list{
+    display: flex ;
+    flex-wrap: wrap;
+    /* gap: 2%; */
+    gap: 10px;
+    background-color: red;
+}
+.card_list li{
+    width: calc((100% - 50px) / 6 );
+    padding: 3%;
+    background-color: aqua;
+}
+@media (max-width :1000px) {
+    .card_list li{
+    width: calc((100% - 40px) / 5 );
+    }
+}
+@media (max-width :768px) {
+    .card_list li{
+    width: calc((100% - 30px) / 4 );
+    }
+}
+@media (max-width : 600px) {
+    .card_list li{
+    width: calc((100% - 20px) / 3 );
+    }
+}
+@media (max-width :480px) {
+    .card_list li{
+    width: calc((100% - 10px) / 2 );
+    }
+}
+@media (max-width :390px) {
+    .card_list li{
+    width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+@import url(reset.css);
+body{
+    background-color: aqua;
+}
+html{
+    font-size: 10px;
+}
+.box{
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+h1{
+    /* display: none; */
+    font-size: 3.2rem;
+    /* font-size: 8vw; */
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+@media (max-width: 768px){
+    h1{
+        display: block;
+    }
+    html{
+        font-size: 9px;
+    }
+}
+@media (max-width: 390px){
+    .box{
+        border-radius: 50%;
+        overflow: hidden ;
+    }
+    /* h1{
+        font-size: 12px;
+    } */
+}

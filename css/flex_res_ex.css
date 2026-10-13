@@ -1,0 +1,41 @@
+@import url(reset.css);
+/* 바탕 */
+main{
+    width: 80%;
+    max-width: 720px;
+    min-width: 240px;
+    margin: 0 auto;
+    padding: 3%;
+    background-color: aqua;
+}
+main article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding: 3%;
+}
+/* 기사 */
+.img_box, 
+.txt_box{
+    width: 50%; 
+}
+/* 이미지 영역 */
+.img_box img{
+    width: 100%;
+    overflow: hidden;
+}
+/* 텍스트 영역 */
+.txt_box{
+    width: 100%;
+    background-color: red;
+}
+/* 크기 조절시 변경사항 */
+@media (max-width : 720px ) {
+    main article{
+        flex-direction: column ; 
+    }
+    .img_box{
+        width: 100%;
+    }
+}
