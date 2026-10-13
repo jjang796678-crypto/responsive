@@ -13,7 +13,7 @@ main article{
     display: flex;
     align-items: center;
     gap: 3%;
-    padding: 3%;
+    background-color: rgb(122, 238, 87);
 }
 /* 기사 */
 .img_box, 
@@ -23,12 +23,10 @@ main article{
 /* 이미지 영역 */
 .img_box img{
     width: 100%;
-    overflow: hidden;
 }
 /* 텍스트 영역 */
 .txt_box{
-    width: 100%;
-    background-color: red;
+    margin: 3%;
 }
 /* 크기 조절시 변경사항 */
 @media (max-width : 720px ) {
